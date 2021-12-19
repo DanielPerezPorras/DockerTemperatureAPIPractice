@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dscrit-temp-api-service
+  labels:
+    app: dscrit-temp-api
+spec:
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 4567
+  selector:
+    app: dscrit-temp-api
+  type: LoadBalancer

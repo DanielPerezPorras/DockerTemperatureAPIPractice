@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dscrit-temp-api
+  labels:
+    app: dscrit-temp-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dscrit-temp-api
+  template:
+    metadata:
+      labels:
+        app: dscrit-temp-api
+    spec:
+      containers:
+      - name: temp-api-1
+        image: danielperezporrasuma/temp-api
