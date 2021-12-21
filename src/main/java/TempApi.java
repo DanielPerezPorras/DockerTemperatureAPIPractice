@@ -79,7 +79,7 @@ public class TempApi {
 	}
 
 	private static String grafica(Request req, spark.Response res) {
-		return createChartWebPage(getContainerName("HOSTNAME"));
+		return createChartWebPage(System.getenv("HOSTNAME"));
 	}
 
 	private static String listajson(Request req, spark.Response res) {
