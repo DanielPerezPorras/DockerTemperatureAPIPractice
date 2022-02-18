@@ -1,6 +1,6 @@
 # Docker Practical Exercise - Critical Software Development
 
-This repository was used for a Critical Software Development practice I did while studying at University of Málaga.
+This repository was used for a practical exercise for subject "Desarrollo de Software Crítico" (Critical Software Development) during my Software Engineering studies at University of Málaga.
 
 The project consists on a Java web application using the Spark framework to offer a simple service that allows creating and displaying temperatures on a graph. Data is stored on a Redis database.
 
